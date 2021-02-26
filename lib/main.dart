@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(MyApp());
 }
 
@@ -11,11 +11,11 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title:Text("Flutter Catalog"),
+          title: Text("Flutter Catalog"),
         ),
         body: Center(
           child: Container(
-            child:Text("30 days of flutter"),
+            child: Text("30 days of flutter"),
           ),
         ),
         drawer: Drawer(),
