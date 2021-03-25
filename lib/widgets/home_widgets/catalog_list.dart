@@ -34,7 +34,9 @@ class CatalogItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return VxBox(
         child: Row(children: [
-      Hero(tag:Key(catalog.id.toString()),child: CatalogImage(image: catalog.image)),
+      Hero(
+          tag: Key(catalog.id.toString()),
+          child: CatalogImage(image: catalog.image)),
       Expanded(
           child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -50,7 +52,7 @@ class CatalogItem extends StatelessWidget {
                 "\$${catalog.price}".text.bold.xl.make(),
                 ElevatedButton(
                   onPressed: () {},
-                  child: "Buy".text.make(),
+                  child: "Add to cart".text.make(),
                   style: ButtonStyle(
                       backgroundColor:
                           MaterialStateProperty.all(MyTheme.darkBluish),
@@ -59,6 +61,6 @@ class CatalogItem extends StatelessWidget {
               ],
             ).pOnly(right: 8.0),
           ])),
-    ])).white.rounded.square(160).make().py(16);
+    ])).white.rounded.square(200).make().py(16);
   }
 }
